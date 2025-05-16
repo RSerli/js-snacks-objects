@@ -24,5 +24,12 @@ const ElencoNomi = [
 let ElencoNomiFormattati = []
 
 // PROCESSO
-
+for (let i = 0; i < ElencoNomi.length; i++) {
+    const CurrentName = ElencoNomi[i];
+    // console.log(CurrentName)
+    // set LowerCase tutta la stringa in CurrentName
+    const CurrentName_LowerCase = CurrentName.toLowerCase()
+    ElencoNomiFormattati.push(CurrentName_LowerCase)
+}
 // OUTPUT
+console.log(ElencoNomiFormattati)
