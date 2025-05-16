@@ -21,5 +21,8 @@ const ElencoPersone = [
 
 let ElencoIndicazioneGuidaAbilitata = []
 // PROCESSO
+for (let i = 0; i < ElencoPersone.length; i++) {
+    const CurrentElement = ElencoPersone[i];
 
+}
 // OUTPUT
