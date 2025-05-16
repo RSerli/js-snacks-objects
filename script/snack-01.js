@@ -28,5 +28,13 @@ let AutoAltro = []
 for (let i = 0; i < automobili.length; i++) {
     const CurrentElement = automobili[i];
     console.log(CurrentElement)
+    // controllo tipo di alimentazione
+    if (CurrentElement.alimentazione == "Benzina") { //SE è con alimentazione a benzina
+        AutoBenzina.push(CurrentElement)
+    } else if (CurrentElement.alimentazione == "Diesel") { //SE è con alimentazione a diesel
+        AutoDiesel.push(CurrentElement)
+    } else { //SE ha atri tipi di alimentazione
+        AutoAltro.push(CurrentElement)
+    }
 }
 // OUTPUT
