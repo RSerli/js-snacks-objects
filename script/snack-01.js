@@ -38,3 +38,9 @@ for (let i = 0; i < automobili.length; i++) {
     }
 }
 // OUTPUT
+console.log("array auto a benzina")
+console.log(AutoBenzina)
+console.log("array auto a diesel")
+console.log(AutoDiesel)
+console.log("array auto con atri tipi di alimentazione")
+console.log(AutoAltro)
