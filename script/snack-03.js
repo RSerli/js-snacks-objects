@@ -21,6 +21,11 @@ let ClasseMammiferi = []
 // PROCESSO
 for (let i = 0; i < animali.length; i++) {
     const CurrentElement = animali[i];
-
+    // controllo se è un mammifero
+    if (CurrentElement.classe == "Mammiferi") {
+        // pusho il nome dell'elemento nell'array ClasseMammiferi
+        ClasseMammiferi.push(CurrentElement.nome)
+    }//se no bypasso
 }
 // OUTPUT
+console.log(ClasseMammiferi)
