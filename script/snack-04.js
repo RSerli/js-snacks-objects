@@ -23,6 +23,14 @@ let ElencoIndicazioneGuidaAbilitata = []
 // PROCESSO
 for (let i = 0; i < ElencoPersone.length; i++) {
     const CurrentElement = ElencoPersone[i];
-
+    let StringaRisultatoControllo
+    // controllo abilitazione alla guida autovettura in Italia
+    if (CurrentElement.anni >= 18) { // SE ha compiuto il 18esimo anno, è abilito/a
+        StringaRisultatoControllo = `${CurrentElement.cognome} ${CurrentElement.nome} è abilitato/a alla guida di un autoveicolo`
+    } else { // ALTRIMENTI NON è abilito/a
+        StringaRisultatoControllo = `${CurrentElement.cognome} ${CurrentElement.nome} NON è abilitato/a alla guida di un autoveicolo`
+    }
+    ElencoIndicazioneGuidaAbilitata.push(StringaRisultatoControllo)
 }
 // OUTPUT
+console.log(ElencoIndicazioneGuidaAbilitata)
