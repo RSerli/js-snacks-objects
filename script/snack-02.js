@@ -31,14 +31,14 @@ for (let i = 0; i < ElencoNomi.length; i++) {
     const CurrentNameNoSpace = CurrentName.trimStart()
     // set LowerCase tutta la stringa in CurrentName
     const CurrentName_LowerCase = CurrentNameNoSpace.toLowerCase()
-    console.log(CurrentName_LowerCase)
+    // console.log(CurrentName_LowerCase)
     // set FirstLetter to UpperCase
     // prendo la prima lettera e la setto maiuscola
     const CurrentName_FirsLetterUp = CurrentName_LowerCase[0].toUpperCase()
-    console.log(CurrentName_FirsLetterUp)
+    // console.log(CurrentName_FirsLetterUp)
     // taglio il resto della stringa
     const CurrentName_RestString = CurrentName_LowerCase.slice(1)
-    console.log(CurrentName_RestString)
+    // console.log(CurrentName_RestString)
     // Riunisco il tutto e ottengo il nome con la maiuscola
     const CurrentName_FirstUp = CurrentName_FirsLetterUp.concat("", CurrentName_RestString)
     ElencoNomiFormattati.push(CurrentName_FirstUp)
