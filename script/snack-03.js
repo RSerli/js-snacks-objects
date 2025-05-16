@@ -16,6 +16,11 @@ const animali = [
     { nome: "Serpente", famiglia: "Colubridi", classe: "Rettili" },
     { nome: "Gufo", famiglia: "Strigidi", classe: "Uccelli" }
 ];
-// PROCESSO
+let ClasseMammiferi = []
 
+// PROCESSO
+for (let i = 0; i < animali.length; i++) {
+    const CurrentElement = animali[i];
+
+}
 // OUTPUT
